@@ -1,0 +1,21 @@
+/* PokemonCard.css */
+
+.pokemon-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.pokemon-sprite {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 5px;
+  border-radius: 5px; /* Rounded corners for the sprite */
+}
+
+.pokemon-name {
+  text-transform: capitalize; /* Capitalize the Pokemon name */
+}

@@ -1,0 +1,22 @@
+/* App.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  margin: 0; /* Reset the default margin */
+}
+
+
+.app-content {
+  margin: auto;
+  max-width: 800px; /* Adjust the value based on your design */
+}

@@ -1,0 +1,80 @@
+/* PokemonList.css */
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0; /* Remove gaps from the grid */
+}
+
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 15px; /* Add gap between buttons */
+}
+
+button {
+  padding: 8px;
+  background-color: #689f38;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect */
+  width: 85px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #4caf50;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+.header > h1 {
+  color: white; /* Set h1 text color to white */
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px;
+  background-color: #689f38;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 85px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items on mobile */
+  }
+
+  .search-bar {
+    margin-top: 10px; /* Add margin on top for spacing */
+  }
+
+  .header > h1 {
+    display: none; /* Hide h1 text on mobile */
+  }
+}
