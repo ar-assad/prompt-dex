@@ -42,7 +42,9 @@ const PokemonList = () => {
   const handleSearch = () => {
     // Convert the query to lowercase before searching
     const lowerCaseQuery = searchQuery.toLowerCase();
-    setSelectedPokemon(lowerCaseQuery);
+    if (lowerCaseQuery.trim() !== '') {
+      setSelectedPokemon(lowerCaseQuery);
+    }
   };
 
   return (
